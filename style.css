@@ -129,7 +129,7 @@ main{
 }
 
 .header-main>button:hover{
-    height: 70%;
+    height: 50px;
 }
 .header-main>button>a{
     color: white;
@@ -150,6 +150,13 @@ main{
   justify-content: center;
   text-align: center;
 }
+.mark{
+    width: 50%;
+    margin: 0 auto;
+    border: solid 1px #adff2f ;
+    margin-bottom: .5rem;
+}
+
 .nav-main>ul{
     text-decoration: none;
 }
@@ -180,19 +187,53 @@ article>p{
 }
 
 .container-square{
-    width: calc(100% -230px);
+    width: calc(100%- 200px);
     flex-wrap: wrap; 
+}
+.disco>img{
+    width: 100%;
 }
 
 .card{
     width: calc((100% / 6) - 30px );
     margin: 0 15px;
+   
 }
 .radius>img{
     border-radius: 50%;
 }
+
 .square{
     width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.disco>img:hover{
+    opacity: .5;
+    z-index: -1;
+}
+.play>img{
+    width: 100%;
+    text-align: center;
+}
+.play{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    border: solid 1px white;
+    color: white;
+    background-color: white;
+    padding: .5rem .5rem;
+    border-radius: 50%;
+    display: none;
+    
+}
+.square:hover .play{
+   display: block;
+  
 }
 
 article{
