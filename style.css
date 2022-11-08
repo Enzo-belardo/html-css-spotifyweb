@@ -37,7 +37,7 @@ i{
     color: white;
 }
 
-header>nav>ul{
+.container-sub>nav>ul{
     text-decoration: none;
 }
 header>nav>ul>li{
@@ -47,8 +47,14 @@ nav{
     margin: .5rem 1rem;
     line-height: 1.5rem;
 }
-ul>li>img{
-    width: 25px;
+nav>ul>li>img{
+    width: 20px;
+}
+nav>ul>li>i,a:hover{
+    color: white;
+}
+nav>li>a:first-child{
+    color: white;
 }
 
 .playlist>ul{
@@ -56,21 +62,33 @@ ul>li>img{
     text-decoration: none;
 }
 .playlist>ul>li{
+    text-decoration: none;
     color: white;
     line-height: 1.4rem;
+    color: #65676c;
 }
 .playlist{
     margin: 1rem 1rem;
 }
-.playlist>h3{
+.playlist>h3:hover{
     color: white;
+}
+.playlist>ul>li:hover{
+    color: white;
+}
+.playlist>h3:first-child{
+    color: white;
+}
+
+.playlist>h3{
+    color: #65676c;
 }
 
 .playlist>h3>i{
     border: solid 1px white;
+    background-color: black;
     padding: .5rem .5rem;
-    background: white;
-    color: black;
+    color: white;
     margin-top: 1rem;
 }
 .utente{
@@ -93,6 +111,7 @@ ul>li>img{
 }
 .row-profile{
     display: flex;
+    margin-bottom: .5rem;
 }
 
 main{
@@ -106,8 +125,10 @@ main{
     height: 60px;
     background-color: #080b12;
     justify-content: flex-end;
-    align-items: center;
-    
+    align-items: center;  
+}
+.header-main>a:hover{
+    height: 60%;
 }
 
 .header-main>a{
@@ -134,9 +155,13 @@ main{
     margin-left: 1rem;
     color: white;
 }
+.nav-main>ul>li>a:hover{
+    color: white;
+}
+
 a{
     text-decoration: none;
-    color: white;
+    color: #65676c;
 }
 .title{
     width: 100%;
@@ -146,6 +171,9 @@ a{
 article{
     margin-top: 1rem;
     color: white;
+}
+article>p{
+    color: #65676c;
 }
 
 .container-square{
@@ -228,7 +256,7 @@ footer{
             width: 100%;
             line-height: 2rem;
         }
-        .playlist>ul>li>a{
+        .playlist>ul>li>a,h3{
             display: none;
         }
         .playlist>ul>li,h3{
@@ -236,11 +264,14 @@ footer{
         }
         .installed>p{
             display: none;
-            border-bottom: none;
         }
         .row-profile>p{
             display: none;
         }
+        .container-sub{
+            width: 100%;
+        }
+
         .container-foot{
             width: 100%;
         }
@@ -249,8 +280,12 @@ footer{
             display: inline;
             width: 100%;
         }
-
-        
+        .installed{
+            width: 100%;
+            text-align: center;
+            border-bottom: none;
+        }
+       
         main{
             width: calc(100% - 50px);
         }
