@@ -6,33 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Montserrat:wght@500&family=PT+Sans:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Spotify</title>
 </head>
 <body>
     <div class="d-flex wrap">
-        <header>
-            <img src="./img/logo.svg" alt="">
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Cerca</li>
-                    <li>La tua libreria</li>
-                </ul>
-            </nav>
-            <div class="play">
-                <h3>PLAYLIST</h3>
-                <h3><i class="fa-solid fa-plus"></i> Crea play list</h3>
-                <ul>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                </ul>
+        <header class="flex-c">
+            <div class="container-sub">
+                <div class="logo">
+                    <img src="./img/logo-small.svg" alt="">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i> <a href="">Home</a></li>
+                        <li><i class="fa-solid fa-magnifying-glass"></i> <a href="">Cerca</a></li>
+                        <li><img src="./img/libreria.svg" alt=""> <a>La tua libreria</a></li>
+                    </ul>
+                </nav>
+                <div class="playlist">
+                    <h3>PLAYLIST</h3>
+                    <h3><i class="fa-solid fa-plus"></i> Crea playlist</h3>
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
             </div>
-            
+
+            <div class="container-foot d-flex">
+                <div class="utente">
+                    <div class="installed d-flex">
+                        <i class="fa-regular fa-circle-down"></i>
+                        <p> Installa app</p>
+                    </div>
+                    <div class="row-profile">
+                        <img src="./img/profile.svg" alt="">
+                        <P> Vincenzo</P>
+                    </div>
+                </div>          
+            </div>
         </header>
         <main>
             <div class="header-main d-flex">
@@ -136,7 +156,7 @@
             <section>
                 <div class="container-square d-flex">
                     <div class="title">
-                        <h2>Creato per Vincenzo Belardo</h2>
+                        <h2>Artisti piu ascoltati</h2>
                         <p>piu ascolti, piu accurati saranno i suggerimenti</p>
                     </div>
                     <div class="card">
